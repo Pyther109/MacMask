@@ -1,9 +1,7 @@
 import subprocess
+import sys
 
-def mask():
-    # Definisco l'interfaccia come variabile così è facile da cambiare in futuro
-    interface = "wlan0"
-    
+def mask(interface):
     try:
         subprocess.run(["sudo", "ip", "link", "set", interface, "down"], check=True)
         subprocess.run(["sudo", "macchanger", "-r", interface], check=True)
@@ -14,4 +12,9 @@ def mask():
         print(f"Error during execution: {e}")
 
 if __name__ == "__main__":
-    mask()
+    if len(sys.argv) > 1:
+        target_interface = sys.argv[1]
+    else:
+        target_interface = "wlan0"
+        
+    mask(target_interface)
