@@ -19,7 +19,7 @@ The system must have the following packages installed:
 *   **iproute2** (Standard on Arch)
 
 ## 📋 Features
-- [x] **Interface Management**: Automatically toggles state (Target: `wlan0`)
+- [x] **Interface Management**: Automatically toggles state (Target: `wlan0 and wlan1`)
 - [x] **Full Randomization**: Generates a completely new MAC with random OUI
 - [x] **Stealth Feedback**: "Ghost Ops" style status messages
 - [x] **Robustness**: Integrated error handling for subprocess calls
