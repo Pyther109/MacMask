@@ -26,6 +26,20 @@ To hide indentity run:
 
 To restore identity run: 
  sudo python Macunmask.py
+ 
+ ## 🚀 Installation Guide
+
+Follow these steps to get **MacMask** up and running on your system in no time!
+
+### 1️⃣ Prerequisites
+Make sure you have **Python 3.x** installed. You can check by typing `python3 --version` in your terminal.
+
+### 2️⃣ Clone the Repository
+Open your terminal and run:
+
+```bash
+git clone https://github.com/Pyther109/MacMask.git
+cd MacMask
 
 ## 📬 Contact & Support
 If you encounter any issues, have questions, or just want to talk about Analog Horror and Arch Linux:
